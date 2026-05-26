@@ -24,7 +24,7 @@ Before executing ANY shell command:
 1. Load the guard script:
    exec(open(os.path.expanduser(
        os.path.join(os.environ.get("HERMES_HOME", "~/.hermes"),
-       "skills/security/entropy-guard/scripts/guard_check.py")
+       "skills/entropy-guard/scripts/guard_check.py")
    )).read())
 
 2. Call: result = guard_precheck("the command")
